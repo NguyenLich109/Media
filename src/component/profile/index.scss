@@ -1,0 +1,52 @@
+.container-profileUser {
+  display: flex;
+  align-items: center;
+  //   background-color: #cccccc33;
+  padding: 10px;
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+    h2 {
+      text-transform: capitalize;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.flex-right {
+  display: flex;
+  justify-content: right;
+}
+
+@media (max-width: 576px) {
+  .flex-right {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal_user {
+  .modal_image {
+    position: relative;
+    text-align: center;
+    label {
+      position: absolute;
+      left: 56%;
+      background-color: #fff;
+      bottom: 10%;
+      height: 35px;
+      width: 35px;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 50%;
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+}

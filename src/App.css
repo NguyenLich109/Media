@@ -1,38 +1,49 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #fe2c55;
+  --background: #fff;
+  --color-text: #757575;
+  --default-layout-header-height: 56px;
+  --default-layout-header-width: 1200px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  /* background-color: #f3eeee5e; */
+}
 .App {
+  overflow: hidden;
+}
+.login {
+  position: absolute;
+  padding: 10px;
+  width: 30%;
+  background-color: #eeecec;
+  top: 25%;
+  left: 35%;
+  border-radius: 10px;
+}
+.login-text {
   text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-button {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-button__google {
+  border-radius: 20px;
 }

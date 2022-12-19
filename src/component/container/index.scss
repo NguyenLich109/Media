@@ -1,0 +1,280 @@
+:root {
+  --header-height: 56px;
+  --text: #303131;
+  --blue: #0f90f2;
+  --color-icon-grey: #ccc;
+  --background-color: #cccccc33;
+  --default-layout-header-width: 1200px;
+}
+.container {
+  max-width: var(--default-layout-header-width);
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: var(--header-height) auto 0;
+
+  &-row {
+    padding-top: 12px;
+  }
+  &-profile {
+    background-color: #cccccc33;
+    padding: 10px;
+    border-radius: 8px;
+    &__noti {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #3031314a;
+      padding-bottom: 10px;
+      &-flex {
+        display: flex;
+        img {
+          height: 40px;
+          width: 40px;
+          object-fit: inherit;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+        span {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: var(--text);
+
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+          -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+        }
+      }
+      i {
+        font-size: 2rem;
+        color: var(--text);
+      }
+      i:hover {
+        color: #0f90f2;
+        cursor: pointer;
+      }
+    }
+    &__adress {
+      &-flex {
+        display: flex;
+        padding-top: 10px;
+        i {
+          font-size: 2rem;
+          color: var(--text);
+          padding-right: 10px;
+        }
+        i:hover {
+          color: #0f90f2;
+          cursor: pointer;
+        }
+        span {
+          font-size: 1.4rem;
+          -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+          -khtml-user-select: none; /* Konqueror HTML */
+          -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+        }
+      }
+    }
+    .border {
+      border: 1px solid var(--text);
+    }
+  }
+  &-noti {
+    background-color: #cccccc33;
+    padding: 10px;
+    border-radius: 8px;
+    &__flex {
+      display: flex;
+      align-items: center;
+      img {
+        height: 40px;
+        width: 40px;
+        object-fit: inherit;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+      &-div {
+        // width: 70%;
+        font-size: 1.5rem;
+        color: var(--text);
+        padding: 10px 20px;
+        background-color: var(--background-color);
+        border-radius: 20px;
+        cursor: pointer;
+
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+      }
+      div:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+  &-news {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #cccccc33;
+    &__flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        display: flex;
+        img {
+          height: 40px;
+          width: 40px;
+          object-fit: inherit;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+        span {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: var(--text);
+        }
+        span:nth-child(2) {
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+        .container-news__flex-one {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      i {
+        font-size: 1.6rem;
+        color: var(--text);
+        padding-right: 10px;
+      }
+      i:hover {
+        color: #0f90f2;
+        cursor: pointer;
+      }
+    }
+    &__content {
+      padding-top: 5px;
+      span {
+        font-size: 1.5rem;
+      }
+      img {
+        // margin-top: 5px;
+        width: 100%;
+      }
+    }
+    .container-news__view {
+      &-user {
+        padding-bottom: 8px;
+        div {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      &-flex {
+        display: flex;
+        align-items: center;
+        span {
+          padding-right: 3px;
+        }
+      }
+      &-icon {
+        button {
+          width: 33.33%;
+          background-color: var(--background-color);
+        }
+      }
+    }
+    .container-news__view-mess {
+      padding-top: 20px;
+    }
+    .container-news__view-noti {
+      padding: 0 0 10px 0;
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50%;
+        object-fit: inherit;
+        height: 38px;
+        width: 38px;
+      }
+      form {
+        width: 92%;
+        padding-left: 10px;
+      }
+    }
+    .container-news__view-user {
+      display: block;
+      div {
+        display: flex;
+        justify-content: left;
+        img {
+          height: 38px;
+          width: 38px;
+        }
+        .text-font {
+          background-color: #b7b1b861;
+          padding: 5px 10px;
+          border-radius: 8px;
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .text-form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        .font-size {
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding-right: 5px;
+            cursor: pointer;
+          }
+          span:nth-child(3) {
+            font-size: 1.1rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  &-friend {
+    .container-friend__text {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .container-profile__noti {
+      padding-top: 10px;
+      border: none;
+      i {
+        font-size: 1.8rem;
+      }
+    }
+    .container-profile__noti-flex {
+      span {
+        font-weight: 400;
+        font-size: 1.4rem;
+      }
+      span:nth-child(1) {
+        font-weight: 600;
+      }
+    }
+    // background-color: yellow;
+  }
+  .padding-fix:nth-child(1) {
+    padding-bottom: 0 !important;
+  }
+}
