@@ -19,7 +19,7 @@ export default function Login() {
   const dispatch = useDispatch();
   const provider = new GoogleAuthProvider();
   const [address, setAddress] = useState("");
-  const [friends, setFriends] = useState("");
+  const [friends, setFriends] = useState([]);
 
   const userIf = useSelector((state) => state.addUserReducer);
   const { check } = userIf;

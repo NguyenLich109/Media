@@ -49,10 +49,8 @@
     }
   }
   @media (max-width: 576px) {
-    ul {
-      li:nth-child(1) {
-        display: none;
-      }
+    .fix-padding {
+      padding-left: 0 !important;
     }
   }
 }

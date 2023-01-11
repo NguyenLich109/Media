@@ -46,11 +46,10 @@ export const addUser = (profile) => async (dispatch) => {
       const data = doc.data();
       if (data.uid === uid) {
         dt = data;
-        return dt;
       }
     });
     const data =
-      dt == "" &&
+      dt === "" &&
       (await setDoc(doc(db, "users", id), {
         name: displayName,
         email,
@@ -65,8 +64,7 @@ export const addUser = (profile) => async (dispatch) => {
         accessToken,
         createAt: serverTimestamp(),
       }));
-    const dat =
-      dt == "" ? (await getDoc(doc(db, "users", data.id))).data() : dt;
+    const dat = dt === "" ? (await getDoc(doc(db, "users", id))).data() : dt;
     dispatch({
       type: ADD_USER_SUCCESS,
       payload: dat,
@@ -152,14 +150,12 @@ export const getProfile = () => async (dispatch) => {
 //GET ALL USERS
 export const getAllUsersAction = () => async (dispatch) => {
   try {
-    dispatch({ type: GET_USERS_REQUEST });
     let data = [];
     const getContents = await getDocs(collection(db, "users"));
     getContents?.forEach((doc) => {
       const dt = doc.data();
       if (dt) {
         data.push(dt);
-        return data;
       }
     });
     dispatch({

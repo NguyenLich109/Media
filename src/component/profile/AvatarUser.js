@@ -9,7 +9,7 @@ export default function AvatarUser() {
       <Avatar.Group>
         <Tooltip title="Ant User" placement="top">
           <Avatar
-            src="https://joeschmoe.io/api/v1/random"
+            src=""
             style={{
               backgroundColor: "#87d068",
             }}
@@ -20,7 +20,7 @@ export default function AvatarUser() {
             style={{
               backgroundColor: "#87d068",
             }}
-            src="https://joeschmoe.io/api/v1/random"
+            src=""
           />
         </Tooltip>
         <Tooltip title="Ant User" placement="top">
@@ -28,7 +28,7 @@ export default function AvatarUser() {
             style={{
               backgroundColor: "#87d068",
             }}
-            src="https://joeschmoe.io/api/v1/random"
+            src=""
           />
         </Tooltip>
       </Avatar.Group>

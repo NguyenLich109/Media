@@ -7,9 +7,25 @@ import {
 } from "./Reducers/UserReducers.js";
 import { modalDelete } from "./Reducers/ModalReducer";
 import {
+  addFriendReducer,
+  getFriendReducer,
+  getNotiFriendReducer,
+  updateFriendReducer,
+} from "./Reducers/FriendsReducer";
+import {
   addContentPostReducer,
   getContentPostReducer,
+  updateContentPostReducer,
+  updateCommentReducer,
+  updateCommentChildReducer,
+  getCommmentReducer,
 } from "./Reducers/ContentPostReducer";
+import {
+  addZoomReducer,
+  getZoomReducer,
+  updateZoomReducer,
+  deleteZoomReducer,
+} from "./Reducers/MessengerReducer";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
@@ -21,6 +37,18 @@ const listReducer = combineReducers({
   getAllUserReducer,
   addContent: addContentPostReducer,
   getContent: getContentPostReducer,
+  getCommmentReducer,
+  updateContentPostReducer,
+  updateCommentReducer,
+  updateCommentChild: updateCommentChildReducer,
+  addFriendReducer,
+  getFriendReducer,
+  getNotiFriend: getNotiFriendReducer,
+  updateFriend: updateFriendReducer,
+  addZoomReducer,
+  getZoomReducer,
+  updateZoomReducer,
+  deleteZoomReducer,
 });
 
 const userInfoFromLocalStorage = localStorage.getItem("userInfo")

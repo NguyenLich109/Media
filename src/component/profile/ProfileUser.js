@@ -66,9 +66,7 @@ export default function ProfileUser() {
               ></img>
               <div className="flex">
                 <h2>{users?.name}</h2>
-                <span>
-                  Bạn bè: {users?.friends === "" ? 0 : users?.friends}
-                </span>
+                <span>Bạn bè: {users?.friends.length || 0}</span>
                 <AvatarUser />
               </div>
             </div>
