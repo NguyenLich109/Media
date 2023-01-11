@@ -81,6 +81,7 @@ export default memo(function ZoomMessenge({ id }) {
                     <li key={user.id}>
                       <FriendsMessenge
                         user={user}
+                        users={users}
                         listAllUsers={listAllUsers}
                       />
                     </li>
