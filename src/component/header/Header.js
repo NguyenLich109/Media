@@ -213,9 +213,9 @@ export default function Header() {
           </Col>
           <Col className="fix-padding" xs={8} sm={8} md={6} lg={4} xl={4}>
             <ul style={{ display: "flex", alignItems: "center" }}>
-              <li>
+              {/* <li>
                 <i className="fa-solid fa-moon"></i>
-              </li>
+              </li> */}
               <li>
                 <Dropdown
                   menu={{

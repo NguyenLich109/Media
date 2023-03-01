@@ -91,6 +91,8 @@ export default function ModalPostNoti({ title, content }) {
                 id: uuidv4(),
               })
             );
+            setCntent("");
+            setImages([]);
           }
         });
       });
@@ -151,6 +153,7 @@ export default function ModalPostNoti({ title, content }) {
           <TextArea
             placeholder="Nội dung mà bạn muốn viết"
             onChange={(e) => handlerText(e)}
+            value={cntent}
             rows={6}
           />
           {images.length > 0 && (
